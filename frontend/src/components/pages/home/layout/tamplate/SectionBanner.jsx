@@ -48,19 +48,18 @@ const Mat = styled.div`
     }
  `
 
+    
 
 
 // eslint-disable-next-line import/no-anonymous-default-export
 class Banner extends Component {
-
-    
 
     render() {
 
         return (
             <BannerContainer style={{ backgroundImage: `url(${image})` }} >
                 <h2>Aprenda Sobre</h2>
-                <input id="auto-texto" type="text" name="auto-text" value readOnly/>
+                {/* <>{this.autoText()}</> */}
                 <h2>Em Cursos Completos</h2>
                 <Mat>
                     <NavItem
