@@ -24,10 +24,12 @@ const BannerContainer = styled.div`
         color: #fff;
     }
     input[type=text]{
+        color: #fff;
         font-size: 110px;
         width: 80%;
         font-family: lato;
         text-align: center;
+
         background: 0 0;
         border: 0;
         outline: none;
@@ -59,7 +61,7 @@ class Banner extends Component {
         return (
             <BannerContainer style={{ backgroundImage: `url(${image})` }} >
                 <h2>Aprenda Sobre</h2>
-                {/* <>{this.autoText()}</> */}
+                    <input type='text' name='auto-texto' value='Auto Texto' readOnly/>
                 <h2>Em Cursos Completos</h2>
                 <Mat>
                     <NavItem
